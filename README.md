@@ -28,6 +28,20 @@ undo/redo.
 
 ## Installation
 
+Recommended installer:
+
+1. Download the `*-setup.exe` file from the latest GitHub release.
+2. Close OBS Studio.
+3. Run the installer and select your OBS Studio installation folder.
+4. Start OBS Studio again.
+
+Portable or manual installation:
+
+1. Download the release ZIP instead of the setup EXE.
+2. Extract the ZIP into your OBS Studio installation folder, or copy the
+   included `obs-plugins` and `data` folders into it.
+3. Start OBS Studio again.
+
 ### Windows
 
 Download the release archive and extract or copy its contents into your OBS
