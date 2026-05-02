@@ -1,10 +1,53 @@
-# Align & Distribute
+# OBS Forum Submission Draft: Align & Distribute
 
-Align & Distribute is a third-party OBS Studio dock for positioning multiple
-scene items with Photoshop-style alignment, distribution, and match-size tools.
+## Resource Title
 
-Select scene items in OBS, then use the compact toolbar to align edges, align
-centres, distribute spacing, or match dimensions. Actions integrate with OBS
+Align & Distribute
+
+## Version
+
+1.0.0
+
+## Category
+
+OBS Studio Plugins
+
+## Tags
+
+align, distribute, scene items, layout, dock, positioning, match size, workflow
+
+## Short Tagline
+
+Photoshop-style align, distribute, and match-size tools for OBS scene items.
+
+## Supported Bit Versions
+
+64-bit
+
+## Supported Platforms
+
+Windows
+
+## Minimum OBS Studio Version
+
+30.0.0
+
+## Source Code URL
+
+https://github.com/KSTYER1/obs-distribute
+
+## Download URL
+
+https://github.com/KSTYER1/obs-distribute/releases/tag/v1.0.0
+
+## Overview
+
+Align & Distribute is an unofficial third-party dock for OBS Studio. It adds a
+compact toolbar for positioning multiple scene items with familiar
+Photoshop-style alignment, distribution, and match-size tools.
+
+Select scene items in OBS, then use the dock to align edges, align centres,
+distribute spacing, or match dimensions. Operations integrate with OBS
 undo/redo.
 
 ## Features
@@ -20,18 +63,10 @@ undo/redo.
 - Skips locked scene items automatically.
 - Compact dock UI with icon buttons.
 
-## Requirements
-
-- OBS Studio 30.x, 31.x, or 32.x
-- Windows x64 for the packaged release
-- Qt 6, provided by OBS Studio
-
 ## Installation
 
-### Windows
-
-Download the release archive and extract or copy its contents into your OBS
-Studio installation directory.
+Download the Windows x64 release archive and extract or copy its contents into
+your OBS Studio installation directory.
 
 The final layout should include:
 
@@ -42,8 +77,8 @@ data/obs-plugins/obs-distribute/locale/de-DE.ini
 data/obs-plugins/obs-distribute/icons/*.svg
 ```
 
-The packaged release also includes `INSTALL.bat`, which can copy the plugin
-files into a selected OBS directory.
+The release archive also includes `INSTALL.bat`, which can copy the plugin into
+a selected OBS directory.
 
 Restart OBS after installation. The dock appears under:
 
@@ -65,59 +100,7 @@ Button availability depends on the current selection:
 - Locked items are ignored.
 - Groups are treated as single top-level items.
 
-## Tool Groups
-
-### Align
-
-Align items to the first selected item:
-
-- Left
-- Horizontal centre
-- Right
-- Top
-- Vertical centre
-- Bottom
-
-### Distribute
-
-Distribute items using the extremes of the current selection:
-
-- Horizontal left edges
-- Horizontal centres
-- Horizontal right edges
-- Horizontal spacing
-- Vertical top edges
-- Vertical centres
-- Vertical bottom edges
-- Vertical spacing
-
-### Match Size
-
-Match dimensions to the first selected item:
-
-- Width
-- Height
-- Width and height
-
-## Building from Source
-
-Requires CMake 3.28 or newer, Qt 6, OBS development headers, and a supported
-compiler toolchain.
-
-```bash
-git clone https://github.com/kstyer/obs-distribute.git
-cd obs-distribute
-cmake --preset windows-x64
-cmake --build --preset windows-x64 --config RelWithDebInfo
-```
-
-The project uses the
-[obs-plugintemplate](https://github.com/obsproject/obs-plugintemplate) build
-structure.
-
-## Version History
-
-### 1.0.0
+## What's New in 1.0.0
 
 - Initial release.
 - Added align, distribute, and match-size actions.
@@ -125,9 +108,14 @@ structure.
 - Added rotation-aware bounding box calculations.
 - Added locked-item skipping.
 
+## Support / Bugs
+
+Please report issues in the resource discussion thread or in the GitHub issue
+tracker once the repository is published.
+
 ## License
 
-Align & Distribute is licensed under GPL-2.0-or-later.
+GPL-2.0-or-later.
 
 ## Disclaimer
 
@@ -137,3 +125,14 @@ with or endorsed by the OBS Project.
 AI-assisted tools were used during development and release preparation. The
 maintainer is responsible for reviewing, testing, and publishing the released
 plugin.
+
+## Pre-Submit Checklist
+
+- [x] Public GitHub repository exists.
+- [x] README is visible on GitHub.
+- [x] GPL license is visible on GitHub.
+- [x] Source Code URL field points to the repository.
+- [x] Release ZIP is attached to GitHub Releases or uploaded to the forum.
+- [ ] At least one screenshot/GIF is added to the resource description.
+- [ ] Description is in English.
+- [ ] No OBS logo is used as resource icon or marketing artwork.
